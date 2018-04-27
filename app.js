@@ -91,7 +91,6 @@ function clearTasksFromLocalStorage(){
 function filterTasks(e) {
     const text = e.target.value.toLowerCase();
     // console.log(document.querySelectorAll('.collection-item'));
-
     document.querySelectorAll('.collection-item').forEach(function (task) {
         const item = task.firstChild.textContent;
         if(item.toLowerCase().indexOf(text) != -1){
